@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portofolio portable</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cs/style.css">
 </head>
-<body bgcolor="Cornsilk">
-
-    <!-- Header Halaman -->
-    <header>
-        <center>
-            <h1>PORTOFOLIO FERRY</h1>
-            <h3>Program Studi Sistem Informasi - Universitas Dian Nuswantoro</h3>
-            <!-- membuat garis -->
-            <hr size="3" color="brown" width="100%">
-        </center>
-    </header>
+<body>
 
     <!-- Navigasi Utama -->
-    <nav>
-        <center>
-        <div class="menu">
-            <a href="#profil">Profil Saya</a> |
-            <a href="#pendidikan">Riwayat Pendidikan</a> |
-            <a href="#keahlian">Keahlian & Hobi</a> |
-            <a href="#proyek">Proyek Terkait</a> |
-            <a href="#kontak">Kontak</a>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-ferry">
+  <div class="container-fluid px-4 px-lg-5">
+
+    <!-- Logo + tulisan -->
+    <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+      <img src="image/logo-ferry.png" alt="Logo Ferry" height="40">
+      <span class="logo">PORTOFOLIO</span>
+    </a>
+
+    <!-- Tombol hamburger (tampil di HP) -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menuUtama"
+            aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <ul class="nav-menu">
+            <li><a href="#"><small>Profil saya</small></a></li> 
+            <li><a href="#"><small>Riwayat Pendidikan</small></a></li> 
+            <li><a href="#"><small>Keahlian & Hobi</small></a></li> 
+            <li><a href="#"><small>Pengalaman</small></a></li> 
+            <li><a href="#"><small>Kontak</small></a></li>
+        </ul>
+        </a>
         </div>
-        </center>
     </nav>
 
-    <hr size="1" color="brown" width="100%">
+  <header class="intro-ferry">
+  <p class="intro-hi">Hi Feyy</p>
+  <h1 class="intro-title">Welcome to My Portofolio </h1>
+  <p class="intro-desc">
+    Information Systems student at Dian Nuswantoro University with expertise
+    in UI Design, Graphic Design, Social Media Design, and Video Editing.
+  </p>
+  <div class="intro-btns">
+    <a class="intro-btn intro-btn-solid" href="#profil">Lihat Profil</a>
+    <a class="intro-btn intro-btn-outline" href="#kontak">Hubungi Saya</a>
+  </div>
+</header>
 
     <!-- Bagian Profil -->
-    <section id="profil">
-        <h2>A. Profil Saya</h2>
+    <section id="profil" class="body">
+        <h2>Profil Saya</h2>
 
         <!-- Gambar dengan atribut HTML bawaan (align="left" untuk perataan teks) -->
         <!-- hspace="15" → memberikan jarak horizontal 15 piksel antara gambar dan elemen/teks di sekitarnya. -->
 
-        <table cellpadding="10px">
+        <table padding="0">
             <tr>
-                <td valign="top">
-                    <img src="image/ferr.jpeg"alt="ferry" width="120px" height="170px"></td>
-                <td valign="top">
-                    <p align="justify">
+                <td valign="top" class="img">
+                    <img src="image/ferr.jpeg"alt="ferry" width="200px" height="270px"></td>
+                <td valig="top" class="teks">
+                    <p id="para1" align="justify" class="about">
                         Saya merupakan mahasiswa aktif <b>Universitas Dian Nuswantoro</b> dengan Program Studi <i>Sistem Informasi, Fakultas Ilmu Komputer</i>. Saya memilih untuk mengambil program studi sistem informasi dikarenakan saya tertarik dengan perkembangan teknologi yang kian berkembang pesat. Selain itu saya juga tertatik dengan managemant-managemant suatu sistem didalam proses bisnis yang akan sangat membantu kebutuhan manusia. disisi lain, kreatif dan berorientasi dengan pengalaman dalam menghasilkan Desain Antarmuka dan Graphic Design senantiasa antusias mengeksplorasi antara teknologi dan estetika visual menjadi minat bakat saya sampai sekarang.
                         Berfokus pada penciptaan pengalaman digital yang menarik, inovatif, dan fungsional, serta dapat berkolaborasi yang baik dalam bekerja bersama tim guna memastikan setiap proses desain berjalan selaras dengan tujuan yang telah ditetapkan.</p>
                     
-                    <p align="justify">
-                        Halaman web ini dibuat menggunakan HTML5 murni tanpa menggunakan CSS
-                        untuk memenuhi instruksi pembuatan struktur dasar web. Dalam pembuatan
-                        halaman ini, saya menggunakan berbagai tag HTML untuk menyusun struktur
+                    <p class="pa2" align="justify">
+                        Dalam pembuatan halaman ini, saya menggunakan berbagai tag HTML untuk menyusun struktur
                         dan menampilkan informasi. Saya juga mempelajari fungsi dari setiap tag
                         agar dapat digunakan sesuai dengan kebutuhan halaman web. Pembuatan
                         halaman ini menjadi salah satu latihan untuk memahami dasar-dasar
                         pengembangan web. Dengan latihan ini, saya berharap dapat memahami HTML
                         dengan lebih baik dan mampu menggunakannya dalam membuat halaman web
                         yang lebih kompleks.</p>
+                </td>
                 </td>
             </tr>
         </table>
@@ -68,18 +86,24 @@
     <br>
 
     <!-- Bagian Pendidikan (Tabel Murni) -->
-    <section id="pendidikan">
+    <section id="pendidikan" class="body">
 
-        <h2>B. Riwayat Pendidikan</h2>
+        <section id="pendidikan" class="body">
 
-        <!-- Tabel menggunakan atribut HTML bawaan: border, cellpadding, cellspacing -->
-        <table border="1" cellpadding="8" cellspacing="0" width="100%">
-            <tr bgcolor="brown">
-                <th><font color="white">Tingkat Pendidikan</font></th>
-                <th><font color="white">Nama Instansi / Sekolah</font></th>
-                <th><font color="white">Tahun</font></th>
-                <th><font color="white">Keterangan</font></th>
-            </tr>
+  <h2>Riwayat Pendidikan</h2>
+
+  <div class="tabel-radius">
+    <div class="table-responsive">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <th>Tingkat Pendidikan</th>
+            <th>Nama Instansi / Sekolah</th>
+            <th>Tahun</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
             
             <tr>
                 <td>Sekolah Menengah Pertama (SMP)</td>
@@ -113,10 +137,11 @@
     <br>
 
     <!-- Bagian Keahlian & Hobi (List HTML) -->
-    <section id="keahlian">
+    <section id="keahlian" class="body">
 
-        <h2>C. Keahlian & Hobi</h2>
-        <h3>1. Keahlian Utama</h3>
+        <h2>Keahlian & Hobi</h2>
+        <hr size="1" color="#DEDEDE">
+        <h4>1. Keahlian Utama</h4>
         <ul>
             <li>UI/UX Mobile apps & Web Design</li>
             <li>Graphic Designer</li>
@@ -129,28 +154,29 @@
             <li>Editing Video</li>
         </ul>
 
-        <h3>2. Hobi & Minat</h3>
+        <h4>2. Hobi & Minat</h4>
         <ol type="a">
             <li>Eksplorasi pembuatan aplikasi web</li>
             <li>Bulu Tangkis</li>
             <li>Sepak Bola</li>
             <li>Bersepeda</li>
         </ol>
+        <hr size="1" color="#DEDEDE">
 
     </section>
 
     <br>
 
     <!-- Bagian Proyek (Article & Aside) -->
-    <section id="proyek">
+    <section id="proyek" class="body">
 
-        <h2>D. Pengalaman & Berorganisasi</h2>
+        <h2>Pengalaman & Berorganisasi</h2>
 
         <article>
-            <h3>Tugas Pemrograman Web 1</h3>
             <p>
                 Proyek ini adalah pembuatan halaman tabel beberapa pengalaman saya pribadi menggunakan struktur elemen semantik HTML, tabel terstruktur, dan beberapa elemen input form.
             </p>
+            <hr size="1" color="#DEDEDE">
             <br>
         </article>
 
@@ -188,95 +214,118 @@
     <td align="center">2023-sekarang</td>
   </tr>
 </table>
+<br>
+<hr size="1" color="#DEDEDE">
 
+<section id="sertifikat" class="body">
     </section>
+    <h2 id="sertifikat">Sertifikat</h2>
 
-    <br>
+<div class="sertifikat-grid">
+
+  <div class="kartu-sertifikat">
+    <div class="kotak-gambar">
+      <img src="image/sertif_gowolk.jpeg">
+    </div>
+    <h3>Sertifikat GoWolk</h3>
+    <a class="tombol-sertifikat" href="image/" target="_blank">Lihat Sertifikat</a>
+  </div>
+
+  <div class="kartu-sertifikat">
+    <div class="kotak-gambar">
+      <img src="image/sertif_btng.png">
+    </div>
+    <h3>Sertifikat Dinacom</h3>
+    <a class="tombol-sertifikat" href="image/" target="_blank">Lihat Sertifikat</a>
+  </div>
+
+  <div class="kartu-sertifikat">
+    <div class="kotak-gambar">
+      <img src="image/sertif_pkl.jpeg">
+    </div>
+    <h3>Sertifikat BTNG</h3>
+    <a class="tombol-sertifikat" href="image/" target="_blank">Lihat Sertifikat</a>
+  </div>
+
+  <div class="kartu-sertifikat">
+    <div class="kotak-gambar">
+      <img src="image/sertif_sensasi.jpeg">
+    </div>
+    <h3>Sertifikat Sensansi</h3>
+    <a class="tombol-sertifikat" href="image/" target="_blank">Lihat Sertifikat</a>
+  </div>
+
+  <br>
+
+</div>
+</section>
 
     <!-- Bagian Form Kontak -->
-    <section id="kontak">
+    <section id="kontak" class="body">
 
-        <h2>E. Form Kontak Pengunjung</h2>
+        <h2>Form Kontak Pengunjung</h2>
 
         <p>Silakan isi form di bawah ini untuk mengirimkan pesan:</p>
 
         <!-- Form murni HTML -->
-        <form action="simpan.php" method="post">
+    <section id="kontak" class="body">
+  <div class="wrap">
 
-            <table border="0" cellpadding="5">
+    <div>
+      <h2>Kirim pesan</h2>
+      <p class="intro">Isi form di samping untuk menghubungi saya.</p>
+    </div>
 
-                <tr>
-                    <td><label for="fnama">Nama Lengkap</label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="text" id="fnama" name="fnama" style="width: 262px;" required>
-                    </td>
-                </tr>
+    <form action="#" method="post">
+      <div class="field">
+        <label for="nama">Nama lengkap</label>
+        <input type="text" id="nama" name="nama" autocomplete="name" required>
+      </div>
 
-                <tr>
-                    <td><label for="femail">Email</label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="email" id="femail" name="femail" style="width: 262px;" required>
-                    </td>
-                </tr>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
 
-                <tr>
-                    <td>Jenis Kelamin</td>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" id="pria" name="fjkel" value="Pria">
-                        <label for="pria">Pria</label>
+      <fieldset>
+        <legend>Jenis kelamin</legend>
+        <div class="choices">
+          <label><input type="radio" name="gender" value="pria"> Pria</label>
+          <label><input type="radio" name="gender" value="wanita"> Wanita</label>
+        </div>
+      </fieldset>
 
-                        <input type="radio" id="wanita" name="fjkel" value="Wanita">
-                        <label for="wanita">Wanita</label>
-                    </td>
-                </tr>
+      <div class="field">
+        <label for="prodi">Program studi</label>
+        <select id="prodi" name="prodi">
+          <option>Sistem Informasi S1</option>
+          <option>Teknik Informatika S1</option>
+          <option>Desain Komunikasi Visual S1</option>
+          <option>Lainnya</option>
+        </select>
+      </div>
 
-                <tr>
-                    <td><label for="fprodi">Program Studi</label></td>
-                    <td>:</td>
-                    <td>
-                        <select id="fprodi" name="fprodi" style="width: 270px;">
-                            <option value="SI">Sistem Informasi S1</option>
-                            <option value="TI">Teknik Informatika S1</option>
-                            <option value="DKV">Desain Komunikasi Visual S1</option>
-                        </select>
-                    </td>
-                </tr>
+      <fieldset>
+        <legend>Hobi / minat</legend>
+        <div class="choices">
+          <label><input type="checkbox" name="hobi" value="design"> Design</label>
+          <label><input type="checkbox" name="hobi" value="uiux"> UI/UX</label>
+        </div>
+      </fieldset>
 
-                <tr>
-                    <td>Hobi / Minat</td>
-                    <td>:</td>
-                    <td>
-                        <input type="checkbox" id="coding" name="fhobi[]" value="Coding">
-                        <label for="coding">Design</label>
+      <div class="field">
+        <label for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan"></textarea>
+      </div>
 
-                        <input type="checkbox" id="reading" name="fhobi[]" value="Membaca">
-                        <label for="reading">UI/UX</label>
-                    </td>
-                </tr>
+      <div class="row">
+        <button class="btn btn-solid" type="submit">Kirim pesan</button>
+        <button class="btn btn-ghost" type="reset">Batal</button>
+      </div>
+    </form>
 
-                <tr>
-                    <td><label for="fpesan">Pesan</label></td>
-                    <td>:</td>
-                    <td>
-                        <textarea id="fpesan" name="fpesan" rows="4" cols="34px"></textarea>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Kirim Pesan">
-                        <input type="reset" value="Batal">
-                    </td>
-                </tr>
-
-            </table>
-
-        </form>
+  </div>
+</section>
 
     </section>
 
@@ -289,6 +338,7 @@
             <p>&copy; 2026 Ferry - Pemrograman Web Sistem Informasi Universitas Dian Nuswantoro</p>
         </center>
     </footer>
-
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+</script>
 </body>
 </html>

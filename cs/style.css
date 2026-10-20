@@ -1,0 +1,511 @@
+body {
+  background-color: #fbf9f8;
+  font-family: "poppins";
+  font-weight: 300;
+}
+
+h1 {
+  background-color: darkslateblue;
+}
+
+.body {
+  padding: 30px;
+}
+
+
+.h2-keahlian {
+  font-family: "poppins";
+  font-weight: 400;
+}
+
+h4 {
+  color: #6e6063;
+  font-weight: 500;
+}
+
+p {
+  color: #6e6063;
+}
+
+.about {
+  padding-right: 20px;
+}
+
+
+.pa2 {
+  padding-right: 20px;
+}
+
+.id-profile {
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fbf9f8;
+  position: sticky;
+  top: 0;
+  text-decoration: none;
+  list-style: none;
+  box-shadow:
+    0 4px 8px 0 rgba(179, 179, 179, 0.2),
+    0 6px 20px 0 rgba(176, 173, 173, 0.19);
+  width: auto;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "poppins", sans-serif;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background-color: #fbf9f8;
+  gap: 30px;
+  padding: 10px 30px;
+}
+
+nav .nav-menu {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 15px 0 0 !important;
+}
+
+.navbar a:hover {
+  color: brown;
+  transform: translateY(-9);
+}
+.teks {
+  padding-top: 0;
+  padding-left: 30px;
+}
+.img {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.tabel-radius {
+  border: 1px solid #e8dfe0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.tabel-radius table {
+  --bs-table-bg: transparent;
+  font-family: "poppins", sans-serif;
+}
+
+/* Header merah seperti sebelumnya */
+.tabel-radius thead th {
+  background-color: #a52a2a;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 14px 16px;
+  border: 0;
+}
+
+.tabel-radius tbody td {
+  padding: 14px 16px;
+  border-left: 0;
+  border-right: 0;
+  border-color: #e8dfe0;
+}
+.tabel-radius tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.tabel-radius a {
+  color: #1c1517;
+}
+.tabel-radius a:hover {
+  color: #a52a2a;
+}
+
+
+.navbar-ferry {
+  background-color: #fbf9f8;
+  box-shadow:
+    0 4px 8px 0 rgba(179, 179, 179, 0.2),
+    0 6px 20px 0 rgba(176, 173, 173, 0.19);
+}
+.navbar-ferry .logo {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: brown;
+}
+.navbar-ferry .nav-link {
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  color: black;
+}
+.navbar-ferry .nav-link:hover {
+  color: #a52a2a;
+}
+
+/* ==================== HERO ==================== */
+.intro-ferry,
+.intro-ferry * {
+  background: transparent !important; /* polosan, mematikan latar ungu dari aturan lama */
+  box-shadow: none !important;
+}
+
+.intro-ferry {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 100px 24px 110px;
+  text-align: center;
+}
+
+.intro-hi {
+  margin: 0 0 20px;
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1c1517;
+}
+
+.intro-title {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(28px, 4.6vw, 58px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #1c1517;
+}
+
+.intro-desc {
+  max-width: 620px;
+  margin: 40px auto 56px;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #6e6063;
+}
+
+.intro-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.intro-btn {
+  display: inline-block;
+  padding: 13px 34px;
+  border-radius: 700px;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.intro-btn-solid {
+  background: #8b1e2d !important;
+  border: 1px solid #8b1e2d;
+  color: #ffffff;
+}
+.intro-btn-outline {
+  border: 1px solid #a52a2a;
+  color: #a52a2a;
+}
+
+@media (max-width: 600px) {
+  .intro-ferry {
+    padding: 64px 20px 48px;
+  }
+  .intro-hi {
+    font-size: 16px;
+  }
+  .intro-desc {
+    margin: 28px auto 36px;
+  }
+}
+
+#sertifikat {
+  margin: 48px 0 24px;
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 30px;
+  color: #1c1517;
+}
+
+/* 4 kolom di desktop */
+.sertifikat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Kartu putih membulat */
+.kartu-sertifikat {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 12px 16px;
+  background: #ffffff;
+  border: 1px solid #e8dfe0;
+  border-radius: 24px;
+}
+
+/* Kotak foto */
+.kotak-gambar {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f5ebec;
+}
+.kotak-gambar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nama sertifikat */
+.kartu-sertifikat h3 {
+  margin: 18px 8px 20px;
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #1c1517;
+  flex-grow: 1; /* dorong tombol ke bawah supaya semua sejajar */
+}
+
+/* Tombol pill penuh */
+.tombol-sertifikat {
+  display: block;
+  padding: 13px 20px;
+  border-radius: 999px;
+  background: #8b1e2d;
+  color: #ffffff;
+  font:
+    500 15px "Hanken Grotesk",
+    system-ui,
+    sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tombol-sertifikat:hover {
+  background-color: #6a1522;
+  transition: all 0.3s ease;
+}
+
+/* Tablet & HP */
+@media (max-width: 1100px) {
+  .sertifikat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .sertifikat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+:root {
+  --paper: #fbf9f8;
+  --surface: #ffffff;
+  --ink: #1c1517;
+  --muted: #6e6063;
+  --line: #e8dfe0;
+  --blush: #f5ebec;
+  --oxblood: #8b1e2d;
+  --oxblood-dark: #6a1522;
+  --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Hanken Grotesk", system-ui, sans-serif;
+}
+
+/*VARIABEL (lewati kalau sudah ada di style.css) */
+:root {
+  --paper: #fbf9f8;
+  --surface: #ffffff;
+  --ink: #1c1517;
+  --muted: #9b999a;
+  --line: #e8dfe0;
+  --blush: #f5ebec;
+  --oxblood: #8b1e2d;
+  --oxblood-dark: #6a1522;
+  --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Hanken Grotesk", system-ui, sans-serif;
+}
+
+/*SEKSI KIRIM PESAN*/
+#kontak {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px; /* 32px = jarak ke tepi layar, isi 0 kalau mau menempel */
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+#kontak * {
+  box-sizing: border-box;
+}
+
+/* Satu kolom: judul & keterangan di atas, kotak form di bawah */
+#kontak .wrap {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Judul & keterangan */
+#kontak h2 {
+  margin: 0;
+  font-family: "poppins";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--ink); /* memperbaiki judul yang putih */
+}
+#kontak .intro {
+  margin: 14px 0 28px;
+  color: var(--muted);
+}
+
+/*KOTAK FORM: lebar penuh kiri sampai kanan*/
+#kontak form {
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+  display: grid;
+  gap: 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+/* Label di atas kolom isian */
+#kontak .field {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+}
+#kontak label,
+#kontak legend {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Fieldset tanpa garis dan tidak menjorok */
+#kontak fieldset {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#kontak legend {
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+/* Kolom isian: penuh selebar kotak */
+#kontak input[type="text"],
+#kontak input[type="email"],
+#kontak select,
+#kontak textarea {
+  width: 100%;
+  padding: 13px 16px;
+  font: 400 16px var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+#kontak input:focus,
+#kontak select:focus,
+#kontak textarea:focus {
+  outline: none;
+  border-color: var(--oxblood);
+  box-shadow: 0 0 0 3px rgba(139, 30, 45, 0.15);
+}
+#kontak textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Radio & checkbox */
+#kontak .choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 8px;
+}
+#kontak .choices label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+#kontak input[type="radio"],
+#kontak input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--oxblood);
+}
+
+/* Tombol */
+#kontak .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+#kontak .btn {
+  display: inline-block;
+  padding: 18px 26px;
+  border: 1px solid var(--oxblood);
+  border-radius: 999px;
+  font: 500 15px var(--sans);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#kontak .btn-solid {
+  background: var(--oxblood);
+  color: #fff;
+}
+#kontak .btn-solid:hover {
+  background: var(--oxblood-dark);
+}
+#kontak .btn-ghost {
+  background: transparent;
+  color: var(--oxblood);
+}
+#kontak .btn-ghost:hover {
+  background: var(--blush);
+}
+
+/*TAMPILAN HP*/
+@media (max-width: 860px) {
+  #kontak {
+    padding: 56px 0px;
+  }
+  #kontak form {
+    padding: 24px;
+  }
+}
